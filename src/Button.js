@@ -1,6 +1,7 @@
 import React from 'react';
-import changeRectColorsAction from './ActionCreators.js';
-import resetRectColorsAction from './ActionCreators.js';
+import changeRectColorsAction from './actionCreators.js';
+import resetRectColorsAction from './actionCreators.js';
+import { connect } from 'react-redux';
 
 class Button extends React.Component {
     render() {
@@ -15,9 +16,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       return { onClick: () => dispatch(changeRectColorsAction("#0000FF", "#FF0000")) };
     } else if (ownProps.text === "Reset") {
       return { onClick: () => dispatch(resetRectColorsAction("#FFFFFF")) };
-    }
-    
-  }
+    }    
+}
   
 Button = connect(null, mapDispatchToProps)(Button);
 

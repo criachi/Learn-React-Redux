@@ -1,5 +1,3 @@
-import React from 'react';
-
 // action creators 
 export function changeRectColorsAction(color1, color2) {
     return {
@@ -15,3 +13,5 @@ export function resetRectColorsAction(color) {
       color: color
     }
 }
+
+export default changeRectColorsAction;

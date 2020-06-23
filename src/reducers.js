@@ -1,4 +1,3 @@
-import React from 'react';
 import initialState from './InitialState.js';
 
 // reducers (change the state in the store)

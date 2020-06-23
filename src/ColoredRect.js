@@ -1,5 +1,6 @@
 import React from 'react';
 import initialState from './InitialState.js';
+import { connect } from 'react-redux';
 
 class ColoredRect extends React.Component {
     render() {
@@ -18,3 +19,5 @@ const mapStateToProps = (state = initialState, ownProps) => {
 }
   
 ColoredRect = connect(mapStateToProps, null)(ColoredRect);
+
+export default ColoredRect;
