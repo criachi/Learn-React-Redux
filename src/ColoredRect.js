@@ -16,6 +16,7 @@ const mapStateToProps = (state = initialState, ownProps) => {
     } else if (ownProps.rectId === "2") {
       return { color: state.color2 };
     }
+    return {};
 }
   
 ColoredRect = connect(mapStateToProps, null)(ColoredRect);

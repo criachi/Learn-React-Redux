@@ -14,4 +14,9 @@ export function resetRectColorsAction(color) {
     }
 }
 
-export default changeRectColorsAction;
+export function updateInputStringAction(input) {
+  return {
+    type: 'UPDATE_INPUT_STRING',
+    inputString: input
+  }
+}

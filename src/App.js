@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from './Button.js';
 import ColoredRect from './ColoredRect.js';
+import TextBoxContainer from './TextBoxContainer.js';
 
 class App extends React.Component {
   render() {
@@ -12,7 +13,13 @@ class App extends React.Component {
            <Button text="Reset"/>
            <ColoredRect className="rect" rectId="1"/>
            <ColoredRect className="rect" rectId="2"/>
+           <div className="container"> 
+            <TextBoxContainer textBoxID="inputBox" isReadOnly={false}/>
+            <TextBoxContainer textBoxID="reverseBox" isReadOnly={true}/>
+            <TextBoxContainer textBoxID="inputLenBox" isReadOnly={true}/>
+          </div> 
         </div>
+       
       </body>
     );
   }

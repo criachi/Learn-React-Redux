@@ -6,11 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import app from './reducers';
+import initialState from './InitialState.js';
 
-const initialState = {
-  color1: "#FFFFFF",
-  color2: "#FFFFFF"
-}
 const store = createStore(app, initialState);
 ReactDOM.render(
   <Provider store={store}>
