@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import Button from './Button.js';
 import ColoredRect from './ColoredRect.js';
 import TextBoxContainer from './TextBoxContainer.js';

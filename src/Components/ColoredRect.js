@@ -1,5 +1,5 @@
 import React from 'react';
-import initialState from './InitialState.js';
+import initialState from '../InitialState.js';
 import { connect } from 'react-redux';
 
 class ColoredRect extends React.Component {
