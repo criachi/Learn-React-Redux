@@ -1,8 +1,8 @@
 import React from 'react';
 import ColoredRect from './ColoredRect.js';
 import { connect } from 'react-redux';
-import { updateInputStringAction } from '../actionCreators.js';
-import initialState from '../InitialState.js';
+import { updateInputStringAction } from '../Actions/actionCreators.js';
+import initialState from '../InitialStates/InitialState.js';
 
 class TextBoxContainer extends React.Component {
   render() {

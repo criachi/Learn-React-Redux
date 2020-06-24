@@ -5,8 +5,8 @@ import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import app from './reducers';
-import initialState from './InitialState.js';
+import app from './Reducers/reducers.js';
+import initialState from './InitialStates/InitialState.js';
 
 const store = createStore(app, initialState);
 ReactDOM.render(

@@ -1,6 +1,6 @@
 import React from 'react';
-import { changeRectColorsAction } from '../actionCreators.js';
-import { resetRectColorsAction } from '../actionCreators.js';
+import { changeRectColorsAction } from '../Actions/actionCreators.js';
+import { resetRectColorsAction } from '../Actions/actionCreators.js';
 import { connect } from 'react-redux';
 
 class Button extends React.Component {
